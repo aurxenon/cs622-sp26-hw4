@@ -36,6 +36,7 @@ jobs:
       - name: Jacoco
         uses: cicirello/jacoco-badge-generator@v2.9.0
         with:
+          jacoco-csv-file: build/reports/jacoco/test/jacocoTestReport.csv
           generate-branches-badge: true
           generate-coverage-badge: true
           fail-on-coverage-decrease: true
